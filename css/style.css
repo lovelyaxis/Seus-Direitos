@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+      --color-black: #000000;
+  --color-primary: #2563eb;
+  --color-primary-dark: #3a6d42;
+  --color-text-light: rgba(255, 255, 255, 0.85);
+  --color-border-light: rgba(255, 255, 255, 0.25);  
+  --color-menu-bg: #4d8b55;
+  --color-hover: #452829;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial, sans-serif;
+}
+
+.header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    background: #f3f4f6;
+}
+
+.menu-header {
+    display: flex;
+    gap: 30px;
+}
+
+.menu-header a {
+    text-decoration: none;
+    color: #6b7280;
+    font-weight: 500px;
+}
+
+.menu-header a:hover {
+    color: #111827;;
+}
+
+.botao-header {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 10 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    background: #e5e7eb;
+}
+
+.hero-text{
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    color: #4b5563;
+    margin-bottom: 20px;
+}
+
+.hero-img img {
+    width: 400px;
+}
+
+.botoes {
+    display: flex;
+    gap: 15px;
+}
+
+.botao-primario {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12 20px;
+    border-radius: 10px;
+}
+
+.botao-secundario {
+    background: transparent;
+    border-radius: 2px solid #2563eb;
+    color: #2563eb;
+    padding: 12px 20px;
+    border-radius: 10px;
+}
