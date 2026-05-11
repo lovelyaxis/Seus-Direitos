@@ -11,125 +11,412 @@
 
 }
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
- /*tem que colocar a Inter*/
 }
 
-
-body {
-    background: #EEF2F7;;
+body{
+    background-color: #EEF3FA;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.header {
+
+/* HEADER */
+
+.header{
     width: 100%;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 40px;
-    background: #f3f4f6;
-    border-bottom: 1px solid #e5e7eb;
-}
-.container {
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 60px;
+    height: 76px;
+    background-color: white;
+    border-bottom: 2px solid #2F6BFF;
 }
 
-.header-content {
+.container{
+    max-width: 1200px;
     height: 100%;
+    margin: 0 auto;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.menu-header {
+.logo img{
+    width: 55px;
+}
+
+.menu-header{
     display: flex;
-    gap: 30px;
-}
-/*LOGO*/
-
-.logo{
-    width: 60px;
-    height: auto;
+    gap: 45px;
 }
 
-/*NAV*/
-.nav{
-    display: flex;
-    gap: 48px;
-}
-
-.nav a {
+.menu-header a{
     text-decoration: none;
-    color: #6B7280;
-    font-size: 16px;
+    color: #5D6472;
+    font-size: 20px;
     font-weight: 500;
 }
-.menu-header a {
-    text-decoration: none;
-    color: #6b7280;
-    font-weight: 500px;
-}
 
-.menu-header a:hover {
-    color: #111827;;
-}
+.botao-header{
+    width: 180px;
+    height: 50px;
 
-.botao-header {
-    background: #2563eb;
-    color: white;
     border: none;
-    padding: 10 18px;
     border-radius: 10px;
+
+    background-color: #2F6BFF;
+    color: white;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+}
+
+/* HERO */
+
+.hero{
+    width: 100%;
+    min-height: calc(100vh - 76px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 50px;
+}
+
+.hero-box{
+    width: 100%;
+    max-width: 1200px;
+
+    background-color: #F7F7F7;
+
+    border-radius: 12px;
+
+    padding: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.08);
+}
+
+/* LEFT */
+
+.left{
+    width: 45%;
+}
+
+.left h1{
+    font-size: 82px;
+    font-weight: 800;
+
+    margin-bottom: 30px;
+}
+
+.left p{
+    font-size: 20px;
+    line-height: 42px;
+
+    color: #222;
+
+    max-width: 420px;
+
+    margin-bottom: 40px;
+}
+
+/* BOTÕES */
+
+.botoes{
+    display: flex;
+    gap: 25px;
+}
+
+.botao-primario{
+    width: 210px;
+    height: 60px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #2F6BFF;
+    color: white;
+
+    font-size: 22px;
+    font-weight: bold;
+
     cursor: pointer;
 }
 
-.hero {
+.botao-secundario{
+    width: 170px;
+    height: 60px;
+
+    border-radius: 10px;
+    border: 2px solid #2F6BFF;
+
+    background-color: transparent;
+
+    color: #2F6BFF;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+/* RIGHT */
+
+.right img{
+    width: 520px;
+}
+
+/*ALTERAÇÕES USANDO O GEMINI*/
+
+/* --- ESTILOS GERAIS PARA SEÇÕES --- */
+.titulo-secao {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.titulo-secao h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.titulo-secao p {
+    font-size: 18px;
+    color: #5D6472;
+}
+
+.container-direitos {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+/* --- SEÇÃO: SEUS DIREITOS --- */
+.seus-direitos {
+    background-color: #EEF3FA;
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 40px 30px;
+    text-align: center;
+    width: 32%;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card .icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.icon-green { background-color: #10B981; }
+.icon-blue { background-color: #3B82F6; }
+.icon-orange { background-color: #F59E0B; }
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+.card-btn {
+    width: 140px;
+    height: 45px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+/* --- SEÇÃO: QUIZ --- */
+.quiz-section {
+    background-color: #2563eb; /* Azul forte do design */
+    padding: 60px 20px;
+    color: white;
+}
+
+.quiz-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 60px;
-    background: #e5e7eb;
 }
 
-.hero-text{
-    max-width: 500px;
+.quiz-text {
+    width: 50%;
 }
 
-.hero-text h1 {
-    font-size: 48px;
+.quiz-text h2 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.quiz-text p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.botao-verde {
+    background-color: #10B981;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.quiz-img {
+    width: 45%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.quiz-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* --- SEÇÃO: COMO AGIR --- */
+.como-agir {
+    background-color: #EEF3FA;
+}
+
+.card-agir img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
     margin-bottom: 20px;
 }
 
-.hero-text p {
-    color: #4b5563;
+.botao-pill {
+    border: none;
+    border-radius: 50px; /* Bordas totalmente arredondadas */
+    padding: 10px 30px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.bg-blue { background-color: #3B82F6; }
+.bg-orange { background-color: #F97316; }
+.bg-red { background-color: #EF4444; }
+
+
+/* --- FOOTER --- */
+.footer-site {
+    background-color: #1A56DB; /* Azul mais escuro */
+    color: white;
+    padding: 60px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.footer-col {
+    width: 22%;
+}
+
+.brand-col .footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand-col p {
+    font-size: 14px;
+    line-height: 1.6;
     margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.9);
 }
 
-.hero-img img {
-    width: 400px;
-}
-
-.botoes {
+.social-icons {
     display: flex;
     gap: 15px;
 }
 
-.botao-primario {
-    background: #2563eb;
-    color: white;
-    border: none;
-    padding: 12 20px;
-    border-radius: 10px;
+.social-icons a {
+    color: #1A56DB;
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 16px;
 }
 
-.botao-secundario {
-    background: transparent;
-    border-radius: 2px solid #2563eb;
-    color: #2563eb;
-    padding: 12px 20px;
-    border-radius: 10px;
+.footer-col h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+.footer-col ul li a:hover {
+    opacity: 1;
+    text-decoration: underline;
 }
