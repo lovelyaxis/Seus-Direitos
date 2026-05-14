@@ -139,9 +139,9 @@ button{
 }
 
 .left h1{
-    font-size: 62px;
+    font-size: 58px;
     font-weight: 800;
-
+    font-family: 'Poppins', sans-serif;
     margin-bottom: 25px;
 }
 
@@ -360,7 +360,7 @@ button{
 }
 
 .quiz-right img{
-    width: 380px;
+    width: 450px;
 }
 
 /* COMO AGIR */
