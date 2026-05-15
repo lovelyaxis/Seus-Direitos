@@ -52,9 +52,9 @@ button{
 
     border-bottom: 2px solid #2F6BFF;
 
-    position: sticky;
+    
     top: 0;
-    z-index: 999;
+
 }
 
 .header-content{
@@ -107,9 +107,8 @@ button{
     transition: 0.3s;
 }
 
-.botao-header:hover{
-    transform: translateY(-2px);
-}
+
+
 
 /* HERO */
 
@@ -194,7 +193,7 @@ button{
 
 .botao-primario:hover,
 .botao-secundario:hover{
-    transform: translateY(-3px);
+    
 }
 
 .right img{
@@ -249,9 +248,8 @@ button{
     transition: 0.3s;
 }
 
-.card:hover{
-    transform: translateY(-5px);
-}
+
+
 
 .icon{
     width: 60px;
