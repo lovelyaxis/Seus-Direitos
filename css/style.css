@@ -437,68 +437,7 @@ button{
     background: #EF4444;
 }
 
-/* SOBRE */
 
-.sobre{
-    padding: 100px 20px;
-}
-
-.sobre-container{
-    max-width: 1200px;
-    margin: 0 auto;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    gap: 70px;
-}
-
-.sobre-left,
-.sobre-right{
-    width: 50%;
-}
-
-.sobre-right span{
-    color: #2F6BFF;
-
-    font-weight: 700;
-}
-
-.sobre-right h2{
-    font-size: 48px;
-
-    margin: 20px 0;
-}
-
-.sobre-right p{
-    line-height: 34px;
-
-    color: #6B7280;
-
-    margin-bottom: 30px;
-}
-
-.sobre-boxes{
-    display: flex;
-    gap: 20px;
-}
-
-.mini-box{
-    background: white;
-
-    padding: 25px;
-
-    border-radius: 14px;
-
-    box-shadow: 0px 10px 20px rgba(0,0,0,0.05);
-}
-
-.mini-box h3{
-    color: #2F6BFF;
-
-    margin-bottom: 8px;
-}
 
 /* FOOTER */
 
