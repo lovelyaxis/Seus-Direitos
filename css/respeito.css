@@ -13,10 +13,7 @@
 
             min-height: 100vh;
 
-            background:
-            radial-gradient(circle at top left, #bbf7d0 0%, transparent 30%),
-            radial-gradient(circle at bottom right, #86efac 0%, transparent 30%),
-            linear-gradient(135deg,#ecfdf5,#f0fdf4);
+           background: #bbf7d0;
 
             display: flex;
             align-items: center;
@@ -115,7 +112,7 @@
 
         .mini-card:hover{
 
-            transform: translateY(-6px);
+            cursor: pointer;
 
             box-shadow: 0px 15px 30px rgba(0,0,0,0.08);
         }
@@ -197,15 +194,21 @@
             font-weight: 700;
         }
 
-        .right{
-
-            width: 45%;
+        .botao:hover {
+        background: #16a34a;
+        box-shadow: 0px 15px 30px rgba(22, 163, 74, 0.30);
         }
 
-        .right img{
+.right{
+    width: 45%;
 
-            width: 350px;
-            height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-            object-fit: cover;
-        }
+.right img{
+    width: 100%;
+    max-width: 500px;
+    object-fit: contain;
+}

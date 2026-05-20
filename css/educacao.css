@@ -12,10 +12,7 @@
 
             min-height: 100vh;
 
-            background:
-            radial-gradient(circle at top left, #bfdbfe 0%, transparent 30%),
-            radial-gradient(circle at bottom right, #93c5fd 0%, transparent 30%),
-            linear-gradient(135deg,#dbeafe,#eef3fa);
+            background: #bfdbfe;
 
             display: flex;
             align-items: center;
@@ -48,22 +45,7 @@
             position: relative;
         }
 
-        .container::before{
-
-            content: "";
-
-            width: 250px;
-            height: 250px;
-
-            background: rgba(47,107,255,0.08);
-
-            border-radius: 50%;
-
-            position: absolute;
-
-            top: -80px;
-            right: -80px;
-        }
+        
 
         .left{
 
@@ -143,7 +125,7 @@
 
         .mini-card:hover{
 
-            transform: translateY(-6px);
+            cursor: pointer;
 
             box-shadow: 0px 15px 30px rgba(0,0,0,0.08);
         }
@@ -240,9 +222,7 @@
         }
 
         .botao:hover{
-
             
-
             background: #1f56db;
 
             box-shadow: 0px 15px 30px rgba(47,107,255,0.30);

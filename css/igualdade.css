@@ -12,10 +12,7 @@
 
             min-height: 100vh;
 
-            background:
-            radial-gradient(circle at top left, #fed7aa 0%, transparent 30%),
-            radial-gradient(circle at bottom right, #fdba74 0%, transparent 30%),
-            linear-gradient(135deg,#fff7ed,#fffbeb);
+            background: #fed7aa;
 
             display: flex;
             align-items: center;
@@ -110,6 +107,11 @@
             padding: 22px;
         }
 
+        .mini-card:hover {
+            cursor: pointer;
+            box-shadow: 0px 15px 30px rgba(0,0,0,0.08);
+        }
+
         .mini-card i{
 
             width: 52px;
@@ -187,26 +189,21 @@
             font-weight: 700;
         }
 
-        .right{
-
-            width: 45%;
+        .botao:hover {
+           background: #ea580c;
+            box-shadow: 0px 15px 30px rgba(234, 88, 12, 0.30);
         }
 
-        .right img{
+       .right{
+    width: 45%;
 
-            width: 100%;
-            height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-            object-fit: cover;
-        }
-    .right img{
-
-    width: 260px;
-
-    position: absolute;
-
-    top: 30px;
-
-    right: 30px;
-
+.right img{
+    width: 100%;
+    max-width: 500px;
+    object-fit: contain;
 }
