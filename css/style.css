@@ -40,7 +40,9 @@ h1 {
     font-family: 'poppins', sans-serif;
 }
 
-
+h2 {
+    font-family: 'poppins' sans-serif;
+}
 
 
 p{
@@ -224,6 +226,8 @@ p{
     font-size: 42px;
 
     margin-bottom: 12px;
+
+    font-family: 'poppins' sans-serif;
 }
 
 .section-title p{
@@ -339,7 +343,7 @@ p{
     justify-content: space-between;
 }
 
-.quiz-left h2{
+.quiz-left h3{
     color: white;
 
     font-size: 48px;
