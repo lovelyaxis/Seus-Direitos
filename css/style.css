@@ -41,12 +41,12 @@ h1 {
 }
 
 h2 {
-    font-family: 'poppins' sans-serif;
+    font-family: 'poppins', sans-serif;
 }
 
 
 p{
-    font-family: 'inter' sans-serif;
+    font-family: 'inter', sans-serif;
 }
 .container{
     width: 100%;
@@ -584,35 +584,151 @@ p{
     }
 }
 
-@media(max-width: 768px){
+/*RESPONSIVIDADE TABLET*/
 
-    .menu-header{
-        display: none;
+@media (max-width: 768px) {
+
+    .container{
+        padding: 0 15px;
+    }
+
+    /* HEADER */
+
+    .header{
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .header-content{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo img{
+        width: 120px;
+    }
+
+    .botao-header{
+        width: 100%;
+        max-width: 250px;
+    }
+
+    /* HERO */
+
+    .hero{
+        padding-top: 150px;
     }
 
     .hero-box{
-        padding: 40px 25px;
+        padding: 30px 20px;
     }
 
     .left h1{
-        font-size: 52px;
+        font-size: 36px;
+        line-height: 45px;
     }
 
-    .quiz-left h2,
-    .sobre-right h2,
-    .section-title h2{
-        font-size: 34px;
+    .left p{
+        font-size: 16px;
+        line-height: 28px;
     }
 
-    .cards-grid,
-    .agir-grid,
-    .footer-container{
-        grid-template-columns: 1fr;
-    }
-
-    .right img,
-    .quiz-right img{
+    .right img{
         width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    /* TITULOS */
+
+    .section-title h2{
+        font-size: 30px;
+    }
+
+    /* QUIZ */
+
+    .quiz-left h3{
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .quiz-left p{
+        font-size: 16px;
+    }
+
+    .quiz-right img{
+        max-width: 320px;
+        margin: 30px auto 0;
+    }
+
+    /* CARDS */
+
+    .card,
+    .agir-card{
+        padding: 25px;
+    }
+
+    /* FOOTER */
+
+    .footer{
+        text-align: center;
+    }
+
+    .socials{
+        justify-content: center;
+    }
+
+}
+
+/*RESPONSIVIDADE CELULAR*/
+
+@media (max-width: 480px) {
+
+    .header{
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .header-content{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu-header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .botao-header{
+        width: 200px;
+    }
+
+
+    .hero{
+        padding-top: 140px;
+    }
+
+    .hero-box{
+        flex-direction: column;
+        padding: 25px 15px;
+        text-align: center;
+    }
+
+    .left,
+    .right{
+        width: 100%;
+    }
+
+    .left h1{
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .left p{
+        font-size: 16px;
+        line-height: 26px;
     }
 
     .botoes{
@@ -624,4 +740,37 @@ p{
         width: 100%;
     }
 
+    .cards-grid,
+    .agir-grid,
+    .footer-container{
+        grid-template-columns: 1fr;
+    }
+
+    .quiz-content{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .quiz-left h3{
+        font-size: 28px;
+    }
+
+    .right img,
+    .quiz-right img{
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .section-title h2{
+        font-size: 28px;
+    }
+
+    .footer{
+        text-align: center;
+    }
+
+    .socials{
+        justify-content: center;
+    }
 }
