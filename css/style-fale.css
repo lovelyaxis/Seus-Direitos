@@ -1,28 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Segoe UI", sans-serif;
 }
 
 body{
-    background: #c8efd0;
+    font-family: 'Inter', sans-serif;
     min-height: 100vh;
+    background: #bbf7d0;
 }
 
 /* HEADER */
 
 .edu-header{
     width: 100%;
+    height: 85px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     background: #16a34a;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,.10);
+}
+
+.container-header{
+    width: 100%;
+    max-width: 1400px;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    padding: 20px 60px;
-
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 0 30px;
 }
 
 .edu-logo{
@@ -31,165 +44,145 @@ body{
     gap: 12px;
 
     color: white;
-
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .edu-logo i{
-    font-size: 28px;
+    font-size: 30px;
 }
 
 .edu-nav{
     display: flex;
-    gap: 30px;
+    gap: 35px;
 }
 
 .edu-nav a{
-    color: white;
     text-decoration: none;
+    color: white;
     font-weight: 600;
-
-    transition: 0.3s;
+    transition: .3s;
 }
 
 .edu-nav a:hover{
-    opacity: 0.8;
+    opacity: .8;
 }
 
-/* PÁGINA */
+/* CONTAINER */
 
 .pagina{
-
     width: 90%;
     max-width: 1400px;
 
-    margin: 40px auto;
+    margin: 30px auto;
 
-    background: #edf8ef;
+    background: rgba(255,255,255,0.75);
 
-    border-radius: 30px;
+    backdrop-filter: blur(10px);
 
-    padding: 60px;
+    border-radius: 32px;
+
+    overflow: hidden;
 
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 
-    gap: 60px;
-
-    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    box-shadow: 0px 25px 60px rgba(0,0,0,0.10);
 }
 
+/* CONTEÚDO */
+
 .conteudo{
-    flex: 1;
+    width: 55%;
+    padding: 70px;
 }
 
 .tag{
+    width: fit-content;
 
-    display: inline-block;
-
-    background: #d7f5df;
+    background: rgba(34,197,94,0.12);
     color: #16a34a;
 
-    padding: 8px 18px;
+    padding: 12px 22px;
 
-    border-radius: 30px;
+    border-radius: 999px;
 
-    font-size: 12px;
-    font-weight: bold;
+    font-size: 14px;
+    font-weight: 700;
 
-    margin-bottom: 20px;
+    margin-bottom: 28px;
 }
 
 h1{
-    font-size: 64px;
-    line-height: 1.1;
+    font-size: 58px;
+    line-height: 66px;
 
-    color: #0f172a;
+    color: #111827;
 
-    margin-bottom: 20px;
+    margin-bottom: 28px;
 }
 
 .descricao{
-    color: #64748b;
-
     font-size: 18px;
+    line-height: 34px;
 
-    line-height: 32px;
+    color: #4B5563;
 
-    margin-bottom: 35px;
-
-    max-width: 700px;
+    margin-bottom: 40px;
 }
 
 /* CARDS */
 
 .cards{
     display: grid;
-
     grid-template-columns: repeat(2,1fr);
 
-    gap: 20px;
+    gap: 18px;
+
+    margin-bottom: 40px;
 }
 
 .card{
+    background: rgba(255,255,255,0.9);
 
-    background: white;
+    border-radius: 18px;
 
-    padding: 28px;
-
-    border-radius: 20px;
-
-    border: 1px solid #e5e7eb;
-
-    min-height: 170px;
+    padding: 22px;
 
     transition: .3s;
 }
 
 .card:hover{
-
     transform: translateY(-5px);
 
-    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    box-shadow: 0px 15px 30px rgba(0,0,0,0.08);
 }
 
 .card h3{
+    margin-bottom: 10px;
 
-    margin-bottom: 15px;
-
-    color: #0f172a;
-
-    font-size: 22px;
+    color: #111827;
 }
 
 .card p{
-
-    color: #64748b;
+    color: #6B7280;
 
     line-height: 28px;
 }
 
-/* CAIXA IMPORTANTE */
+/* INFO BOX */
 
 .importante{
+    background: #16a34a;
 
-    margin-top: 30px;
+    border-radius: 22px;
 
-    background: linear-gradient(
-        135deg,
-        #22c55e,
-        #16a34a
-    );
+    padding: 28px;
 
     color: white;
 
-    padding: 30px;
-
-    border-radius: 20px;
-
-    box-shadow: 0 10px 20px rgba(34,197,94,.25);
+    margin-bottom: 35px;
 }
 
 .importante h2{
@@ -203,65 +196,55 @@ h1{
 /* BOTÃO */
 
 .btn{
-
-    display: inline-flex;
-
-    align-items: center;
-
-    gap: 10px;
-
-    margin-top: 30px;
+    width: 220px;
+    height: 58px;
 
     background: #16a34a;
 
     color: white;
 
+    border-radius: 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
     text-decoration: none;
 
-    padding: 15px 28px;
-
-    border-radius: 12px;
-
-    font-weight: bold;
+    font-weight: 700;
 
     transition: .3s;
 }
 
 .btn:hover{
-    background: #15803d;
+    box-shadow: 0px 15px 30px rgba(22,163,74,.30);
 }
 
 /* IMAGEM */
 
 .imagem{
-
-    flex: 1;
+    width: 45%;
 
     display: flex;
     justify-content: center;
+    align-items: center;
+
+    padding: 40px;
 }
 
 .imagem img{
-
     width: 100%;
     max-width: 500px;
 
-    background: white;
-
-    padding: 40px;
-
-    border-radius: 25px;
-
-    box-shadow: 0 8px 20px rgba(0,0,0,.05);
+    object-fit: contain;
 }
 
 /* FOOTER */
 
 .footer{
-
     background: #16a34a;
-
-    margin-top: 60px;
 
     padding: 70px 20px;
 
@@ -269,7 +252,6 @@ h1{
 }
 
 .footer-container{
-
     max-width: 1200px;
 
     margin: 0 auto;
@@ -282,25 +264,23 @@ h1{
 }
 
 .footer-col h3{
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .footer-col p{
+    line-height: 30px;
 
-    color: rgba(255,255,255,.8);
-
-    line-height: 28px;
+    color: rgba(255,255,255,0.8);
 }
 
 .footer-col a{
-
     display: block;
-
-    color: rgba(255,255,255,.8);
 
     text-decoration: none;
 
-    margin-bottom: 12px;
+    color: rgba(255,255,255,0.8);
+
+    margin-bottom: 15px;
 
     transition: .3s;
 }
@@ -310,45 +290,83 @@ h1{
 }
 
 .socials{
-
     display: flex;
-
     gap: 15px;
 
     margin-top: 20px;
 }
 
 .socials i{
-
     width: 42px;
     height: 42px;
 
     border-radius: 50%;
 
-    background: rgba(255,255,255,.15);
+    background: rgba(255,255,255,0.1);
 
     display: flex;
     align-items: center;
     justify-content: center;
 
     cursor: pointer;
+
+    transition: .3s;
+}
+
+.socials i:hover{
+    transform: translateY(-5px);
 }
 
 /* RESPONSIVO */
 
-@media(max-width: 1000px){
+@media(max-width: 1024px){
 
     .pagina{
         flex-direction: column;
         text-align: center;
     }
 
-    .cards{
-        grid-template-columns: 1fr;
+    .conteudo,
+    .imagem{
+        width: 100%;
+    }
+
+    .tag{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .btn{
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 768px){
+
+    .edu-header{
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .edu-nav{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .conteudo{
+        padding: 40px 25px;
     }
 
     h1{
         font-size: 42px;
+        line-height: 50px;
+    }
+
+    .cards{
+        grid-template-columns: 1fr;
     }
 
     .imagem img{
@@ -363,14 +381,33 @@ h1{
     .socials{
         justify-content: center;
     }
+}
 
-    .edu-header{
-        flex-direction: column;
-        gap: 20px;
+@media(max-width: 420px){
+
+    .conteudo{
+        padding: 30px 20px;
     }
 
-    .edu-nav{
-        flex-wrap: wrap;
-        justify-content: center;
+    h1{
+        font-size: 34px;
+        line-height: 42px;
+    }
+
+    .descricao{
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .card{
+        padding: 18px;
+    }
+
+    .btn{
+        width: 100%;
+    }
+
+    .edu-logo{
+        font-size: 20px;
     }
 }

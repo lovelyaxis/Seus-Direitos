@@ -56,72 +56,64 @@ p{
 
 /* HEADER */
 
+
 .header{
     width: 100%;
-    height: 80px;
+    height: 85px;
 
-    background: white;
-    z-index: 999;
-    border-bottom: 2px solid #2F6BFF;
-    position: fixed;
-    left: 0;
-    top: 0;
+    background: #2563EB;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.10);
 }
 
 .header-content{
-    height: 100%;
+    width: 100%;
+    max-width: 1400px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    padding: 0 30px;
 }
 
-.logo img{
-    width: 140px;
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    color: white;
+    text-decoration: none;
+
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.logo i{
+    font-size: 30px;
 }
 
 .menu-header{
     display: flex;
-    gap: 40px;
+    gap: 35px;
 }
 
 .menu-header a{
     text-decoration: none;
+    color: white;
 
-    color: #5D6472;
+    font-weight: 600;
 
-    font-size: 17px;
-    font-weight: 500;
-
-    transition: 0.3s;
+    transition: all .3s ease;
 }
 
 .menu-header a:hover{
-    color: #2F6BFF;
+    color: rgba(255,255,255,.75);
 }
-
-.botao-header{
-    width: 180px;
-    height: 48px;
-
-    border: none;
-    border-radius: 10px;
-
-    background: #2F6BFF;
-    color: white;
-
-    font-size: 15px;
-    font-weight: 700;
-
-    cursor: pointer;
-
-    transition: 0.5s;
-    
-}
-
-
-
 
 /* HERO */
 
