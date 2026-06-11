@@ -1,171 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Segoe UI", sans-serif;
 }
 
 body{
-    background: #c8efd0;
+    font-family: 'Inter', sans-serif;
     min-height: 100vh;
-    padding: 40px;
+    background: #bbf7d0;
 }
 
-.pagina{
-    max-width: 1200px;
-    margin: auto;
-    background: #edf8ef;
-    border-radius: 30px;
-    padding: 45px;
+/* HEADER */
+
+.edu-header{
+    width: 100%;
+    height: 85px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #16a34a;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,.10);
+}
+
+.container-header{
+    width: 100%;
+    max-width: 1400px;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 50px;
 
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    padding: 0 30px;
 }
 
-.conteudo{
-    flex: 1;
+.edu-logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.edu-logo i{
+    font-size: 30px;
+}
+
+.edu-nav{
+    display: flex;
+    gap: 35px;
+}
+
+.edu-nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.edu-nav a:hover{
+    opacity: .8;
+}
+
+/* CONTAINER */
+
+.container{
+    width: 90%;
+    max-width: 1400px;
+
+    margin: 30px auto;
+
+    background: rgba(255,255,255,.75);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border-radius: 32px;
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 25px 60px rgba(0,0,0,.10);
+}
+
+/* LEFT */
+
+.left{
+    width: 55%;
+    padding: 70px;
 }
 
 .tag{
-    display: inline-block;
-    background: #d7f5df;
+    width: fit-content;
+
+    background: rgba(22,163,74,.12);
     color: #16a34a;
 
-    padding: 8px 16px;
-    border-radius: 30px;
+    padding: 12px 22px;
 
-    font-size: 12px;
-    font-weight: bold;
-    margin-bottom: 20px;
+    border-radius: 999px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    margin-bottom: 28px;
 }
 
-h1{
-    font-size: 56px;
-    color: #0f172a;
-    margin-bottom: 20px;
+.left h1{
+    font-size: 58px;
+    line-height: 66px;
+
+    color: #111827;
+
+    margin-bottom: 28px;
 }
 
 .descricao{
-    color: #64748b;
-    line-height: 32px;
-    max-width: 600px;
-    margin-bottom: 35px;
+    font-size: 18px;
+    line-height: 34px;
+
+    color: #4b5563;
+
+    margin-bottom: 40px;
 }
+
+/* CARDS */
 
 .cards{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+
     gap: 18px;
+
+    margin-bottom: 40px;
 }
 
-.card{
-    background: white;
-    padding: 25px;
+.mini-card{
+    background: rgba(255,255,255,.90);
+
     border-radius: 18px;
 
-    transition: 0.3s;
+    padding: 22px;
+
+    transition: .3s;
 }
 
-.card:hover{
+.mini-card:hover{
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+
+    box-shadow: 0 15px 30px rgba(0,0,0,.08);
 }
 
-.card h3{
-    margin-bottom: 12px;
-    color: #0f172a;
-    font-size: 20px;
+.mini-card h3{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 10px;
+
+    color: #111827;
+    font-size: 18px;
 }
 
-.card p{
-    color: #64748b;
-    line-height: 26px;
+.mini-card h3 i{
+    color: #16a34a;
+    font-size: 18px;
 }
 
-.importante{
-    margin-top: 25px;
+.mini-card p{
+    color: #6b7280;
 
-    background: #22c55e;
-    color: white;
-
-    padding: 25px;
-    border-radius: 20px;
-}
-
-.importante h2{
-    margin-bottom: 12px;
-}
-
-.importante p{
     line-height: 28px;
 }
 
-.btn{
-    display: inline-block;
+/* INFO BOX */
 
-    margin-top: 25px;
+.info-box{
+    background: #16a34a;
+
+    border-radius: 22px;
+
+    padding: 28px;
+
+    color: white;
+
+    margin-bottom: 35px;
+}
+
+.info-box h2{
+    margin-bottom: 15px;
+}
+
+.info-box p{
+    line-height: 30px;
+}
+
+/* BOTÃO */
+
+.botao{
+    width: 220px;
+    height: 58px;
 
     background: #16a34a;
+
     color: white;
+
+    border-radius: 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
 
     text-decoration: none;
 
-    padding: 14px 25px;
-    border-radius: 12px;
+    font-weight: 700;
 
-    font-weight: bold;
-
-    transition: 0.3s;
+    transition: .3s;
 }
 
-.btn:hover{
-    background: #15803d;
+.botao:hover{
+    box-shadow: 0 15px 30px rgba(22,163,74,.30);
 }
 
-.imagem{
-    flex: 0.8;
+.botao i{
+    font-size: 14px;
 }
 
-.imagem img{
+/* RIGHT */
+
+.right{
+    width: 45%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
+}
+
+.right img{
     width: 100%;
-    max-width: 420px;
+    max-width: 500px;
 
-    background: white;
-
-    padding: 25px;
-    border-radius: 25px;
+    object-fit: contain;
 }
 
-@media(max-width: 900px){
-
-    .pagina{
-        flex-direction: column;
-    }
-
-    .cards{
-        grid-template-columns: 1fr;
-    }
-
-    h1{
-        font-size: 40px;
-    }
-
-    .imagem img{
-        max-width: 300px;
-    }
-
-}
 /* FOOTER */
 
 .footer{
-
     background: #16a34a;
-
-    margin-top: 60px;
 
     padding: 70px 20px;
 
@@ -173,7 +267,6 @@ h1{
 }
 
 .footer-container{
-
     max-width: 1200px;
 
     margin: 0 auto;
@@ -186,25 +279,23 @@ h1{
 }
 
 .footer-col h3{
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .footer-col p{
+    line-height: 30px;
 
     color: rgba(255,255,255,.8);
-
-    line-height: 28px;
 }
 
 .footer-col a{
-
     display: block;
-
-    color: rgba(255,255,255,.8);
 
     text-decoration: none;
 
-    margin-bottom: 12px;
+    color: rgba(255,255,255,.8);
+
+    margin-bottom: 15px;
 
     transition: .3s;
 }
@@ -214,72 +305,156 @@ h1{
 }
 
 .socials{
-
     display: flex;
-
     gap: 15px;
 
     margin-top: 20px;
 }
 
 .socials i{
-
     width: 42px;
     height: 42px;
 
     border-radius: 50%;
 
-    background: rgba(255,255,255,.15);
+    background: rgba(255,255,255,.10);
 
     display: flex;
     align-items: center;
     justify-content: center;
 
     cursor: pointer;
-}
-/* HEADER */
 
-.edu-header{
-    width: 100%;
-    background: #16a34a;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 20px 60px;
-
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: .3s;
 }
 
-.edu-logo{
-    display: flex;
-    align-items: center;
-    gap: 12px;
-
-    color: white;
-
-    font-size: 24px;
-    font-weight: bold;
+.socials i:hover{
+    transform: translateY(-5px);
 }
 
-.edu-logo i{
-    font-size: 28px;
+/* TABLET */
+
+@media(max-width:1024px){
+
+    .container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left,
+    .right{
+        width: 100%;
+    }
+
+    .left{
+        padding: 60px 40px;
+    }
+
+    .tag{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .botao{
+        margin: 0 auto;
+    }
+
+    .mini-card h3{
+        justify-content: center;
+    }
 }
 
-.edu-nav{
-    display: flex;
-    gap: 30px;
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .edu-header{
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .container-header{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .edu-nav{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .left{
+        padding: 40px 25px;
+    }
+
+    .left h1{
+        font-size: 42px;
+        line-height: 50px;
+    }
+
+    .descricao{
+        font-size: 17px;
+        line-height: 30px;
+    }
+
+    .cards{
+        grid-template-columns: 1fr;
+    }
+
+    .right{
+        padding: 20px;
+    }
+
+    .right img{
+        max-width: 300px;
+    }
+
+    .footer-container{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .socials{
+        justify-content: center;
+    }
 }
 
-.edu-nav a{
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
+/* CELULARES PEQUENOS */
 
-    transition: 0.3s;
-}
+@media(max-width:420px){
 
-.edu-nav a:hover{
-    opacity: 0.8;
+    .left{
+        padding: 30px 20px;
+    }
+
+    .left h1{
+        font-size: 34px;
+        line-height: 42px;
+    }
+
+    .descricao{
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .mini-card{
+        padding: 18px;
+    }
+
+    .mini-card h3{
+        font-size: 16px;
+    }
+
+    .botao{
+        width: 100%;
+    }
+
+    .edu-logo{
+        font-size: 20px;
+    }
+
+    .edu-logo i{
+        font-size: 24px;
+    }
 }
