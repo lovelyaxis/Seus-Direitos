@@ -9,7 +9,7 @@
 body{
     font-family: 'Inter', sans-serif;
     min-height: 100vh;
-    background: #fffbeb;
+    background: #f77a7a;
 }
 
 .edu-header{
@@ -21,7 +21,7 @@ body{
     align-items: center;
 
     /* MANTENHA A COR DA PÁGINA */
-    background: #f59e0b;
+    background: #c52c2c;
 
     box-shadow: 0 4px 15px rgba(0,0,0,.10);
 }
@@ -105,7 +105,7 @@ body{
     width: fit-content;
 
     background: rgba(245,158,11,0.12);
-    color: #d97706;
+    color: #c52c2c;
 
     padding: 12px 22px;
 
@@ -171,7 +171,7 @@ body{
 
     background: rgba(245,158,11,0.12);
 
-    color: #d97706;
+    color: #c52c2c;
 
     display: flex;
     align-items: center;
@@ -197,7 +197,7 @@ body{
 /* INFO BOX */
 
 .info-box{
-    background-color: #f59e0b;;
+    background-color: #c52c2c;;
 
     border-radius: 22px;
 
@@ -222,7 +222,7 @@ body{
     width: 220px;
     height: 58px;
 
-    background: #f59e0b;
+    background: #c52c2c;
 
     color: white;
 
@@ -269,7 +269,7 @@ body{
 /* FOOTER */
 
 .footer{
-    background: #f59e0b;
+    background: #c52c2c;
 
     padding: 70px 20px;
 

@@ -9,7 +9,7 @@
 body{
     font-family: 'Inter', sans-serif;
     min-height: 100vh;
-    background: #bbf7d0;
+    background: #fed7aa
 }
 
 /* HEADER */
@@ -22,7 +22,7 @@ body{
     justify-content: center;
     align-items: center;
 
-    background: #16a34a;
+    background: #ea580c;
 
     box-shadow: 0 4px 15px rgba(0,0,0,.10);
 }
@@ -102,8 +102,8 @@ body{
 .tag{
     width: fit-content;
 
-    background: rgba(22,163,74,.12);
-    color: #16a34a;
+    background: #fed7aa;
+    color: #ea580c;
 
     padding: 12px 22px;
 
@@ -172,7 +172,7 @@ body{
 }
 
 .mini-card h3 i{
-    color: #16a34a;
+    color: #ea580c;
     font-size: 18px;
 }
 
@@ -185,7 +185,7 @@ body{
 /* INFO BOX */
 
 .info-box{
-    background: #16a34a;
+    background: #ea580c;
 
     border-radius: 22px;
 
@@ -210,7 +210,7 @@ body{
     width: 220px;
     height: 58px;
 
-    background: #16a34a;
+    background: #ea580c;
 
     color: white;
 
@@ -259,7 +259,7 @@ body{
 /* FOOTER */
 
 .footer{
-    background: #16a34a;
+    background: #ea580c;
 
     padding: 70px 20px;
 

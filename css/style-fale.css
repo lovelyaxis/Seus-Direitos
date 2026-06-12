@@ -9,7 +9,7 @@
 body{
     font-family: 'Inter', sans-serif;
     min-height: 100vh;
-    background: #bbf7d0;
+    background: #bfdbfe;
 }
 
 /* HEADER */
@@ -22,7 +22,7 @@ body{
     justify-content: center;
     align-items: center;
 
-    background: #16a34a;
+    background: #2563eb;
 
     box-shadow: 0 4px 15px rgba(0,0,0,.10);
 }
@@ -101,8 +101,8 @@ body{
 .tag{
     width: fit-content;
 
-    background: rgba(34,197,94,0.12);
-    color: #16a34a;
+    background: #bfdbfe;
+    color: #2563eb;
 
     padding: 12px 22px;
 
@@ -174,7 +174,7 @@ h1{
 /* INFO BOX */
 
 .importante{
-    background: #16a34a;
+    background: #2563eb;
 
     border-radius: 22px;
 
@@ -199,7 +199,7 @@ h1{
     width: 220px;
     height: 58px;
 
-    background: #16a34a;
+    background: #2563eb;
 
     color: white;
 
@@ -244,7 +244,7 @@ h1{
 /* FOOTER */
 
 .footer{
-    background: #16a34a;
+    background: #2563eb;
 
     padding: 70px 20px;
 
