@@ -12,6 +12,10 @@ body{
     background: #fed7aa
 }
 
+a {
+    color: white;
+}
+
 /* HEADER */
 
 .edu-header{

@@ -12,6 +12,9 @@ body{
     background: #f77a7a;
 }
 
+a {
+    color: white;
+}
 .edu-header{
     width: 100%;
     height: 85px;
