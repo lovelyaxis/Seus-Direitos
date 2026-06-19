@@ -502,65 +502,135 @@
     }
 }
 
-@media(max-width: 768px){
+/* RESPONSIVO CELULAR */
 
-    .menu-header{
+@media(max-width: 768px){
+    .right img{
         display: none;
     }
-
-    .hero-box{
-        padding: 40px 25px;
+    body{
+        padding: 0;
     }
-
-    .left h1{
-        font-size: 52px;
-    }
-
-    .quiz-left h2,
-    .sobre-right h2,
-    .section-title h2{
-        font-size: 34px;
-    }
-
-    .cards-grid,
-    .agir-grid,
-    .footer-container{
-        grid-template-columns: 1fr;
-    }
-
-    .right img,
-    .quiz-right img{
-        width: 100%;
-    }
-
-    .botoes{
-        flex-direction: column;
-    }
-
-    .botao-primario,
-    .botao-secundario{
-        width: 100%;
-    }
-
-}
-
-
-/* RESPONSIVO */
-
-@media(max-width: 768px){
 
     .edu-header{
-        flex-direction: column;
-
         height: auto;
+        padding: 15px;
+    }
 
-        padding: 20px;
+    .container-header{
+        flex-direction: column;
         gap: 15px;
     }
 
     .edu-nav{
         flex-wrap: wrap;
         justify-content: center;
-        gap: 20px;
+        gap: 15px;
+    }
+
+    .container{
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .left{
+        width: 100%;
+        padding: 35px 20px;
+    }
+
+    .right{
+        width: 100%;
+        padding: 20px;
+    }
+
+    h1{
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .descricao{
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .cards{
+        grid-template-columns: 1fr;
+    }
+
+    .mini-card{
+        text-align: left;
+    }
+
+    .right img{
+        max-width: 280px;
+    }
+
+    .info-box{
+        padding: 22px;
+    }
+
+    .botao{
+        width: 100%;
+    }
+
+    .footer{
+    text-align: left;
+}
+
+.footer-container{
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+}
+
+.footer-col{
+    text-align: center;
+}
+.socials{
+    justify-content: center;
+    }
+}
+
+
+/* CELULARES PEQUENOS */
+
+@media(max-width: 480px){
+    .right img{
+        display: none;
+    }
+
+    h1{
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    .left{
+        padding: 25px 15px;
+    }
+
+    .descricao{
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    .mini-card{
+        padding: 18px;
+    }
+
+    .info-box{
+   padding: 20px;
+    }
+    .footer-container{
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+.footer-col h3{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.footer-col p,
+.footer-col a{
+    font-size: 14px;
+    line-height: 22px;
     }
 }

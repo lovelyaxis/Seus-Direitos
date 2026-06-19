@@ -738,10 +738,15 @@ a {
     }
 
     .cards-grid,
-    .agir-grid,
-    .footer-container{
-        grid-template-columns: 1fr;
-    }
+    .agir-grid{
+    grid-template-columns: 1fr;
+}
+
+.footer-container{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    text-align: left;
+}
 
     .quiz-content{
         flex-direction: column;
@@ -764,10 +769,10 @@ a {
     }
 
     .footer{
-        text-align: center;
+    text-align: left;
     }
-
+    
     .socials{
-        justify-content: center;
-    }
+    justify-content: flex-start;
+}
 }
