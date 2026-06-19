@@ -1,0 +1,222 @@
+/* =========================
+   HERO DIREITOS
+========================= */
+
+.hero-direitos{
+    padding: 80px 20px;
+}
+
+.hero-direitos-content{
+    max-width: 1200px;
+    margin: 0 auto;
+
+    background: #2563EB;
+
+    color: white;
+
+    border-radius: 20px;
+
+    padding: 80px 50px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(37,99,235,.20);
+}
+
+.hero-direitos-content h1{
+    font-size: 52px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero-direitos-content p{
+    max-width: 700px;
+    margin: 0 auto;
+
+    font-size: 18px;
+    line-height: 32px;
+}
+
+/* =========================
+   SEÇÃO DIREITOS
+========================= */
+
+.direitos-section{
+    padding: 90px 20px;
+}
+
+/* =========================
+   GRID
+========================= */
+
+.grid-direitos{
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 30px;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.card-lei{
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 35px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,.06);
+
+    transition: all .3s ease;
+}
+
+.card-lei:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.10);
+    cursor: pointer;
+}
+
+.card-lei h3{
+    font-size: 22px;
+
+    margin-bottom: 15px;
+
+    color: #111827;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-lei p{
+    color: #6B7280;
+
+    line-height: 28px;
+
+    font-size: 15px;
+}
+
+/* =========================
+   ÍCONES
+========================= */
+
+.icon-lei{
+    width: 65px;
+    height: 65px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    font-size: 26px;
+
+    margin-bottom: 25px;
+}
+
+.blue-card{
+    background: #2563EB;
+}
+
+.green-card{
+    background: #22C55E;
+}
+
+.orange-card{
+    background: #F59E0B;
+}
+
+.purple-card{
+    background: #8B5CF6;
+}
+
+.red-card{
+    background: #EF4444;
+}
+
+.cyan-card{
+    background: #06B6D4;
+}
+
+/* =========================
+   RESPONSIVO TABLET
+========================= */
+
+@media(max-width:768px){
+
+    .hero-direitos-content{
+        padding: 50px 25px;
+    }
+
+    .hero-direitos-content h1{
+        font-size: 38px;
+    }
+
+    .hero-direitos-content p{
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .card-lei{
+        padding: 28px;
+    }
+}
+
+/* =========================
+   RESPONSIVO CELULAR
+========================= */
+
+@media(max-width:480px){
+
+    .hero-direitos{
+        padding: 50px 15px;
+    }
+
+    .hero-direitos-content{
+        padding: 40px 20px;
+    }
+
+    .hero-direitos-content h1{
+        font-size: 32px;
+    }
+
+    .hero-direitos-content p{
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    .direitos-section{
+        padding: 60px 15px;
+    }
+
+    .grid-direitos{
+        gap: 20px;
+    }
+
+    .card-lei{
+        padding: 25px;
+    }
+
+    .card-lei h3{
+        font-size: 20px;
+    }
+
+    .icon-lei{
+        width: 58px;
+        height: 58px;
+        font-size: 22px;
+    }
+
+    .footer-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+}
