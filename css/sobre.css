@@ -1,0 +1,444 @@
+/* ===================================================
+   HERO - SOBRE
+=================================================== */
+
+.sobre-hero{
+    padding:80px 20px;
+}
+
+.sobre-container{
+    max-width:1200px;
+    margin:0 auto;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+
+    background:#F8FAFC;
+
+    padding:70px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.sobre-texto{
+    flex:1;
+}
+
+.tag{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+
+    padding:10px 18px;
+
+    background:#DBEAFE;
+    color:#2563EB;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+}
+
+.sobre-texto h1{
+
+    font-size:55px;
+
+    margin-bottom:25px;
+
+    font-weight:800;
+
+}
+
+.sobre-texto p{
+
+    font-size:18px;
+
+    line-height:34px;
+
+    color:#6B7280;
+
+    margin-bottom:20px;
+
+}
+
+.sobre-img{
+
+    flex:1;
+
+}
+
+.sobre-img img{
+
+    width:100%;
+
+    max-width:520px;
+
+    margin:auto;
+
+}
+
+
+/* ===================================================
+   PORQUE CRIAMOS
+=================================================== */
+
+.porque{
+
+    padding:80px 20px;
+
+}
+
+.porque-box{
+
+    max-width:1000px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:50px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.porque-box p{
+
+    color:#6B7280;
+
+    line-height:34px;
+
+    text-align:center;
+
+    font-size:18px;
+
+    margin-bottom:20px;
+
+}
+
+.porque-box p:last-child{
+
+    margin-bottom:0;
+
+}
+
+
+/* ===================================================
+   MISSÃO
+=================================================== */
+
+.missao{
+
+    padding:80px 20px;
+
+}
+
+.principios{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.principio-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+
+    transition:.35s;
+
+}
+
+.principio-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.principio-card i{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    background:#DBEAFE;
+
+    color:#2563EB;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:28px;
+
+    margin:0 auto 25px;
+
+}
+
+.principio-card h3{
+
+    margin-bottom:15px;
+
+    font-size:24px;
+
+}
+
+.principio-card p{
+
+    color:#6B7280;
+
+    line-height:30px;
+
+}
+
+
+/* ===================================================
+   EQUIPE
+=================================================== */
+
+.equipe{
+
+    padding:90px 20px;
+
+}
+
+.equipe-grid{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+.membro{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+
+    transition:.35s;
+
+}
+
+.membro:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.membro img{
+
+    width:150px;
+
+    height:150px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    margin:0 auto 25px;
+
+    border:5px solid #2563EB;
+
+    background:#EEF3FA;
+
+}
+
+.membro h3{
+
+    margin-bottom:10px;
+
+    font-size:22px;
+
+}
+
+.membro span{
+
+    color:#6B7280;
+
+    font-size:15px;
+
+}
+
+
+/* ===================================================
+   BOTÃO DA HERO
+=================================================== */
+
+.sobre-texto .botao{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:16px 28px;
+
+    background:#2563EB;
+
+    color:white;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.sobre-texto .botao:hover{
+
+    background:#1D4ED8;
+
+}
+
+
+/* ===================================================
+   ANIMAÇÕES
+=================================================== */
+
+.principio-card,
+.membro,
+.porque-box{
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/* ===================================================
+   RESPONSIVIDADE
+=================================================== */
+
+@media(max-width:1024px){
+
+.sobre-container{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.principios{
+
+    grid-template-columns:1fr;
+
+}
+
+.equipe-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.sobre-texto h1{
+
+    font-size:42px;
+
+}
+
+.sobre-texto p{
+
+    font-size:17px;
+
+}
+
+.tag{
+
+    justify-content:center;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.equipe-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.sobre-texto h1{
+
+    font-size:34px;
+
+}
+
+.sobre-img img{
+
+    max-width:300px;
+
+}
+
+.porque-box{
+
+    padding:30px;
+
+}
+
+}
