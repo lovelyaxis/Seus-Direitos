@@ -522,34 +522,35 @@ a {
     margin-top: 20px;
 }
 
-.socials .fa-instagram:hover {
-    transform: translateY(-5px);
-    transition: 0.5s;
+.socials a:hover{
+
+    transform:translateY(-5px);
+
+    background:#2563EB;
+
 }
 
-.socials .fa-facebook:hover{
-    transform: translateY(-5px);
-    transition: 0.5s;
-}
+.socials a{
 
-.socials .fa-twitter:hover {
-    transform: translateY(-5px);
-    transition: 0.5s;
-}
+    width:42px;
+    height:42px;
 
-.socials i{
-    width: 42px;
-    height: 42px;
+    border-radius:50%;
 
-    border-radius: 50%;
+    background:rgba(255,255,255,.1);
 
-    background: rgba(255,255,255,0.1);
+    display:flex;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items:center;
 
-    cursor: pointer;
+    justify-content:center;
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
 }
 
 /* RESPONSIVO */
