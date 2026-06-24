@@ -455,12 +455,18 @@ h1{
     }
 }
 
-@media(max-width: 420px){
+@media(max-width: 480px){
 
     .conteudo{
         padding: 30px 20px;
     }
 
+    img {
+        display: none;
+    }
+    .imagem {
+        display: none;
+    }
     h1{
         font-size: 34px;
         line-height: 42px;

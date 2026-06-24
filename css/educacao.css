@@ -649,6 +649,10 @@
         display: none;
     }
 
+    .right {
+        display: none;
+    }
+
     h1{
         font-size: 34px;
         line-height: 40px;
@@ -665,6 +669,10 @@
 
     .mini-card{
         padding: 18px;
+    }
+
+    .imagem-box {
+        display: none;
     }
 
     .info-box{

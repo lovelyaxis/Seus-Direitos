@@ -343,6 +343,42 @@ a {
     transform: translateY(-5px);
 }
 
+.botao-libras a{
+
+    width: 65px;
+
+    height: 65px;
+
+    background: #2563EB;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 28px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+
+    transition: 0.3s ease;
+
+}
+
+.botao-libras a:hover{
+
+    background: #1D4ED8;
+
+    transform: translateY(-5px);
+
+}
+
 /* RESPONSIVO */
 
 @media(max-width: 1024px){
@@ -418,10 +454,14 @@ a {
     }
 }
 
-@media(max-width: 420px){
+@media(max-width: 480px){
 
     .left{
         padding: 30px 20px;
+    }
+
+    .right {
+        display: none;
     }
 
     .left h1{
