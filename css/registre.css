@@ -114,6 +114,7 @@ a {
     font-weight: 700;
 
     margin-bottom: 28px;
+     display: inline-block;
 }
 
 .left h1{
