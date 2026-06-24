@@ -364,6 +364,57 @@
 
 }
 
+/* ==========================
+   BOTÃO DE LIBRAS
+========================== */
+
+.botao-libras{
+
+    position: fixed;
+
+    bottom: 25px;
+
+    right: 25px;
+
+    z-index: 1000;
+
+}
+
+.botao-libras a{
+
+    width: 65px;
+
+    height: 65px;
+
+    background: #2563EB;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 28px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+
+    transition: 0.3s ease;
+
+}
+
+.botao-libras a:hover{
+
+    background: #1D4ED8;
+
+    transform: translateY(-5px);
+
+}
 
 /* ===================================================
    RESPONSIVIDADE
